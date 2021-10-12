@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="new-task-container">
+            <h1>To-Do-List</h1>
+
+            <form action="" class="box">
+                <label for="new-task">Add New Task</label>
+                <input type="text" id="new-task">
+                <button type="submit" id="sBtn">Add Task</button>
+            </form>
+        </div>
+
+        <div id="todo-list" class="todo-list box">
+            <h2>Incomplete Tasks</h2>
+            <ul id="items">
+                <li class="item">
+                    <input id="checkbox" type="checkbox">
+                    <label id="label">Task Name 1</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox">
+                    <label>Task Name 2</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox">
+                    <label>Task Name 3</label>
+                </li>
+            </ul>
+        </div>
+        <div class="complete-list box">
+            <h2>Completed Tasks</h2>
+            <ul>
+                <li>
+                    <label>Task name</label>
+                    <button class="delete">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <script>
+        //access child by parent
+        // const parent = document.querySelector('#items');
+        // const child = parent.children[0];
+
+        // console.log(child);
+
+        // const grandParent = document.querySelector('.todo-list');
+        // const parent = grandParent.children;
+        // const child = parent[1].children;
+         
+        // console.log(child);
+
+        // const grandParent = document.querySelector('.todo-list');
+        // const child = grandParent.querySelectorAll('#item');
+
+        // console.log(child);
+
+        //get patent by child
+        // const child = document.querySelector('#item');
+        // const parent = child.parentElement;
+
+        // console.log(parent);
+
+        // const child = document.querySelector('#item');
+        // const grandParent = child.closest('#items');
+
+        // console.log(grandParent);
+
+        //get sibling by his siblling
+        // const childOne = document.querySelector('#item');
+        // const childrenTwo = childOne.nextElementSibling;
+
+        // childrenTwo.style.color = 'tomato';
+
+        // const childTwo = document.querySelector('#item').nextElementSibling;
+        // const childOne = childTwo.previousElementSibling;
+
+        // childOne.style.color = 'red';
+
+        // const parent = document.querySelector('#items');
+        // const child = parent.childNodes;
+
+        // console.log(child);
+
+
+        // create or delete Element
+
+        // const divElement = document.createElement('div');
+
+        // divElement.className = 'red';
+
+        // divElement.setAttribute('id', 'red');
+        // divElement.setAttribute('title', 'Red Div');
+
+        // const container = document.querySelector('.todo-list');
+        // const h2Element = document.querySelector('h2');
+
+        // container.insertBefore(divElement, h2Element);
+        // container.append(divElement); 
+
+    </script>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="function.js"></script>
+
+</body>
+</html>

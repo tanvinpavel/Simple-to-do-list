@@ -1,0 +1,63 @@
+body{
+    margin:50px 30px;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "new new new new"
+        "incom incom com com"
+    ;
+}
+
+.new-task-container{
+    grid-area: new;
+    text-align: center;
+}
+
+.box{
+    border: 1px solid #717171;
+    border-radius: 5px;
+    padding: 15px 70px;
+}
+
+.todo-list{
+    grid-area: incom;
+}
+
+.todo-list h2, .complete-list h2{
+    border-bottom: 1px solid #717171;
+    padding: 10px 0;
+}
+
+.todo-list label, .complete-list label{
+    padding: 0 10px;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li{
+    margin: 10px 0;
+}
+
+.complete-list{
+    grid-area: com;
+    text-align: center;
+}
+
+.update{
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+.delete{
+    background-color: red;
+    border: none;
+    color: white;
+}
